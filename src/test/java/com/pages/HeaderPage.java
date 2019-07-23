@@ -19,6 +19,10 @@ import java.util.List;
 @DefaultUrl("http://qa1.dev.evozon.com/")
 public class HeaderPage extends PageObject {
 
+    public HeaderPage() {
+        super();
+    }
+
     @FindBy(css = ".skip-link.skip-account .label")
     private WebElementFacade accountButton;
 
@@ -27,10 +31,6 @@ public class HeaderPage extends PageObject {
 
     @FindBy(css = "a[title = 'Register']")
     private WebElementFacade registerButton;
-
-    public HeaderPage() {
-        super();
-    }
 
     public void clickOnAccountButton() {
         accountButton.waitUntilClickable().click();

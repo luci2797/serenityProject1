@@ -1,9 +1,7 @@
 package com.features.search;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 
 import org.junit.Test;
@@ -22,9 +20,11 @@ public class LogInFromHomepageStory {
     public LoginSteps loginSteps;
 
     @Test
-    public void navigatingToLoginPage() {
+    public void completingLoginFromHomepage(){
         loginSteps.isOnHomepage();
-        loginSteps.loginFromHomepage();
+        loginSteps.reachLoginFromHomepage();
         loginSteps.shouldBeOnTheLoginPage();
+        loginSteps.fillingLoginRequiredFields();
+        loginSteps.shouldBeOnTheAccountPage();
     }
 }
