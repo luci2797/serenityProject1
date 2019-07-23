@@ -2,7 +2,7 @@
 *.jar
 *.project
 .project
-.idea
+/.idea/
 .classpath
 /bin/
 /.settings/
