@@ -23,6 +23,19 @@ public class BillingPage extends PageObject {
 
     /////in momentul inj care dau continue retin adresa ca sa o pot verifica ca se noteaza cum trebuie
 
+    public void setSelectBillingAddress(int index) {
+        selectBillingAddress.get(index).click();
+    }
+
+    public void fillInBillingInfo() {
+
+        address = selectBillingAddress.get(1).getText();
+        radioShipToThisAddress.click();
+        shippTo = 1;
+        continueBillingButton.click();
+        toShippingButton.waitUntilClickable();
+        toShippingButton.click();
+    }
 
 
 }
