@@ -1,6 +1,6 @@
-package com.products.tests;
+package com.features.search;
 
-import com.steps.serenity.ProductListSteps;
+import com.steps.serenity.SearchPageSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -9,18 +9,18 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityRunner.class)
-public class AddToCartTest {
+public class SearchFromHomepageStory {
 
     @Managed(uniqueSession = true)
     public WebDriver webdriver;
 
     @Steps
-    ProductListSteps productListSteps;
+    public SearchPageSteps searchPageSteps;
 
     @Test
-    public void displayProductsFoundTest(){
-        productListSteps.openPage();
-        productListSteps.getAllProducts();
-        productListSteps.navigateToRandomProduct();
+    public void searchingForAGivenProduct(){
+        searchPageSteps.isOnHomepage();
+        searchPageSteps.fillingSearchField();
+        searchPageSteps.shouldBeOnSearchResultsPage();
     }
 }

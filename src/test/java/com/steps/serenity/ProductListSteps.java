@@ -7,8 +7,6 @@ import org.junit.Assert;
 
 import java.util.List;
 
-import static java.time.temporal.ChronoUnit.SECONDS;
-
 public class ProductListSteps {
 
     ProductListPage productListPage;
@@ -19,10 +17,15 @@ public class ProductListSteps {
     }
 
     @Step
-    public void getProducts(){
-        List<WebElementFacade> products = productListPage.displayProducts();
+    public void getAllProducts(){
+        List<WebElementFacade> products = productListPage.getProductsLinksList();
         System.out.println("this is the number of products found:" + products.size());
-        Assert.assertTrue(products.size()>0);
+        Assert.assertTrue("there were no products found",products.size()>0);
+    }
+
+    @Step
+    public void navigateToRandomProduct(){
+        productListPage.goToRandomProductPage();
     }
 
 }
