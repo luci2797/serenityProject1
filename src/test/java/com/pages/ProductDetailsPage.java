@@ -23,4 +23,8 @@ public class ProductDetailsPage extends PageObject {
     @FindBy(css = "#configurable_swatch_size>li")
     private List<WebElementFacade> sizeList;
 
+    public void getColors(){
+
+    }
+
 }
