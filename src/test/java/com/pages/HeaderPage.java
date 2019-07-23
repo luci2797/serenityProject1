@@ -32,6 +32,9 @@ public class HeaderPage extends PageObject {
     @FindBy(css = "a[title = 'Register']")
     private WebElementFacade registerButton;
 
+    @FindBy(css = "#search")
+    private WebElementFacade searchField;
+
     public void clickOnAccountButton() {
         accountButton.waitUntilClickable().click();
     }
@@ -42,5 +45,10 @@ public class HeaderPage extends PageObject {
 
     public void clickOnRegisterFromAccountSublist() {
         registerButton.waitUntilClickable().click();
+    }
+
+    public void typeInSearchField(String message){
+        searchField.clear();
+        searchField.sendKeys(message + "\n");
     }
 }
