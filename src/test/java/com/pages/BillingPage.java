@@ -1,11 +1,12 @@
 package com.pages;
 
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
-
+@DefaultUrl("http://qa1.dev.evozon.com/checkout/onepage/")
 public class BillingPage extends PageObject {
 
     @FindBy(css = "#billing-address-select")
@@ -15,7 +16,7 @@ public class BillingPage extends PageObject {
     private WebElementFacade radioShipToThisAddress;
 
     @FindBy(css = "[title='Ship to different address']")
-    private WebElementFacade getRadioShipToDifferentAddress;
+    private WebElementFacade radioShipToDifferentAddress;
 
     @FindBy(css = "#billing-buttons-container >button")
     private WebElementFacade continueBillingButton;
@@ -26,18 +27,38 @@ public class BillingPage extends PageObject {
     private String address;
     private int shippTo = 0;
 
+
     /////in momentul inj care dau continue retin adresa ca sa o pot verifica ca se noteaza cum trebuie
 
     public void setSelectBillingAddress(int index) {
         selectBillingAddress.get(index).click();
+        address = selectBillingAddress.get(index).getText();
+    }
+    public void selectShippingAddress(int index)
+    {
+        if(index==1) {
+            radioShipToThisAddress.click();
+            shippTo = 1;
+        }
+        else
+        {
+            radioShipToDifferentAddress.click();
+            shippTo = 2;
+        }
+    }
+    public void pressContinueBilling()
+    {
+        continueBillingButton.click();
     }
 
-    public void fillInBillingInfo() {
+    public String getAddress() {
+        return address;
+    }
 
-        address = selectBillingAddress.get(1).getText();
-        radioShipToThisAddress.click();
-        shippTo = 1;
-        continueBillingButton.click();
+    public void fillInBillingInfo(int selectShippingAddress, int selectShippingChoice) {
+        setSelectBillingAddress(selectShippingAddress);
+        selectShippingAddress(selectShippingChoice);
+        pressContinueBilling();
         toShippingButton.waitUntilClickable();
         toShippingButton.click();
     }
