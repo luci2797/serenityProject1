@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6e5f36e8-34f8-4397-bcb8-a30b39cc1e44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pages/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pages/ShippingPage.java" afterDir="false" />
     </list>
     <list id="b66547c2-8f2c-4913-8a13-14c84aa363b9" name="Try1" comment="">
       <change afterPath="$PROJECT_DIR$/src/test/java/com/steps/serenity/BillingInformationSteps.java" afterDir="false" />
@@ -63,10 +62,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/BillingPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="45" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="45" />
+                <state relative-caret-position="167">
+                  <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#969#970#0" expanded="true" />
+                    <element signature="e#1020#1021#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -125,8 +126,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/ShippingPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -137,8 +138,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/ShippingMethodPage.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="44" />
+                <state relative-caret-position="85">
+                  <caret line="5" selection-start-line="5" selection-end-line="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -181,9 +182,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/serenity.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/pages/BillingPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/steps/serenity/BillingInformationSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pages/ShippingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/pages/BillingPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/pages/ShippingMethodPage.java" />
       </list>
     </option>
@@ -356,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563879289551</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1563880523139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563880523139</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -381,7 +389,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15191898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -398,7 +405,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5178765" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -548,18 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/ShippingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/ShippingMethodPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="238">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -568,8 +565,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/BillingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="167">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/pages/ShippingMethodPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
