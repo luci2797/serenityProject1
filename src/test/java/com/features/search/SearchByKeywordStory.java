@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import com.steps.serenity.EndUserSteps;
+import com.steps.serenity.LoginSteps;
 
 @RunWith(SerenityRunner.class)
 public class SearchByKeywordStory {
@@ -19,7 +19,7 @@ public class SearchByKeywordStory {
     public WebDriver webdriver;
 
     @Steps
-    public EndUserSteps anna;
+    public LoginSteps anna;
 
     @Issue("#WIKI-1")
     @Test
