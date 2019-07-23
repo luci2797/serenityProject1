@@ -2,8 +2,9 @@
 *.jar
 *.project
 .project
-.idea
+/.idea/
 .classpath
 /bin/
 /.settings/
 /target/ 
+target/ 

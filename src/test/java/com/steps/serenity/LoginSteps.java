@@ -10,6 +10,8 @@ import static org.hamcrest.Matchers.hasItem;
 
 public class LoginSteps {
 
+    public LoginSteps(){}
+
     private HeaderPage headerPage;
     private LoginPage loginPage;
 
