@@ -16,10 +16,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-@DefaultUrl("/http://qa1.dev.evozon.com/")
+@DefaultUrl("http://qa1.dev.evozon.com/")
 public class HeaderPage extends PageObject {
 
-    @FindBy(css = ".skip-link.skip-nav .label")
+    @FindBy(css = ".skip-link.skip-account .label")
     private WebElementFacade accountButton;
 
     @FindBy(css = "a[title = 'Log In']")
@@ -32,15 +32,15 @@ public class HeaderPage extends PageObject {
         super();
     }
 
-    public void clickOnAccountButton(){
-        accountButton.click();
+    public void clickOnAccountButton() {
+        accountButton.waitUntilClickable().click();
     }
 
-    public void clickOnLoginFromAccountSublist(){
-        logInButton.click();
+    public void clickOnLoginFromAccountSublist() {
+        logInButton.waitUntilClickable().click();
     }
 
-    public void clickOnRegisterFromAccountSublist(){
-        registerButton.click();
+    public void clickOnRegisterFromAccountSublist() {
+        registerButton.waitUntilClickable().click();
     }
 }
