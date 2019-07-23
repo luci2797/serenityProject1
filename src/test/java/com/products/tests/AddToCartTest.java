@@ -20,6 +20,7 @@ public class AddToCartTest {
     @Test
     public void displayProductsFoundTest(){
         productListSteps.openPage();
-        productListSteps.getProducts();
+        productListSteps.getAllProducts();
+        productListSteps.navigateToRandomProduct();
     }
 }
