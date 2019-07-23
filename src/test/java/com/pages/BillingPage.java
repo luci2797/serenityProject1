@@ -24,4 +24,5 @@ public class BillingPage extends PageObject {
     /////in momentul inj care dau continue retin adresa ca sa o pot verifica ca se noteaza cum trebuie
 
 
+
 }
